@@ -1,0 +1,8 @@
+﻿@model List<Modifiers.Models.Vehicle>
+
+@foreach (var vehicle in Model)
+{
+    <h1>@vehicle.move()</h1>
+    @vehicle.passenger.name
+    @vehicle.passenger
+}
